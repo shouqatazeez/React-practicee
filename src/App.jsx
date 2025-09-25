@@ -1,23 +1,22 @@
-import { useState } from "react";
-
 import "./App.css";
+import Card from "./components/Card";
+import Counter from "./components/counter";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  const counter = () => {
-    setCount(count + 1);
-  };
-
-  const counterr = () => {
-    setCount(count - 1);
-  };
-
   return (
     <>
-      <h1>Basic counter :{count} using React</h1>
-      <button onClick={counter}>Add value: {count}</button> {""}
-      <button onClick={counterr}>Remove value: {count}</button>
+      {/* <Counter /> */}
+
+      <Card
+        username="some tower like structure"
+        description="This is very tall tower looke in a structure of the very tall"
+        btn="click me to know more"
+      />
+      <Card
+        username="Tall Tower"
+        description="look like very talll"
+        btn="view our website"
+      />
     </>
   );
 }
